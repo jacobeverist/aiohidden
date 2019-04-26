@@ -35,11 +35,8 @@ if __name__ == '__main__':
 
     # Start printing results
     while num_jobs:
-
         print('CASE 1:', app.getResult())
-
         num_jobs -= 1
-
 
     # CASE 2:
     # Run jobs one at a time, waiting for the result back before starting the new one
@@ -47,9 +44,7 @@ if __name__ == '__main__':
     # send tasks and receive results one at a time
     count = 1
     while True:
-
         app.addTask(Task(count,count))
-
         print('CASE 2:', app.getResult())
 
         count += 1
